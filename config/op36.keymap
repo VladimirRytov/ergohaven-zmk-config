@@ -104,9 +104,18 @@
         mouse {
             bindings = <
   &trans  &trans     &trans    &trans     &trans                        &trans  &trans          &mmv MOVE_UP    &trans           &trans
-  &mo 5   &mkp RCLK  &mkp MB3  &mkp LCLK  &trans                        &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+  &mo 6   &mkp RCLK  &mkp MB3  &mkp LCLK  &mo 5                         &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
   &trans  &trans     &trans    &mkp MB4   &mkp MB5                      &trans  &trans          &trans          &trans           &trans
                                &trans     &trans    &tog 4    &mkp MB1  &trans  &mkp MB2
+            >;
+        };
+
+        slow_mouse {
+            bindings = <
+  &trans  &trans     &trans    &trans     &trans                        &trans  &trans             &mmv MOVE_Y(500)   &trans            &trans
+  &trans  &mkp RCLK  &mkp MB3  &mkp LCLK  &trans                        &trans  &mmv MOVE_X(-500)  &mmv MOVE_X(-500)  &mmv MOVE_X(500)  &trans
+  &trans  &trans     &trans    &mkp MB4   &mkp MB5                      &trans  &trans             &trans             &trans            &trans
+                               &trans     &trans    &trans    &mkp MB1  &trans  &mkp MB2
             >;
         };
 
