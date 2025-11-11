@@ -43,10 +43,10 @@
             hold-trigger-on-release;
         };
 
-        togkp: toggle_or_key {
+        mogkp: mog_or_key {
             compatible = "zmk,behavior-hold-tap";
-            label = "to_layer_or_press_key";
-            bindings = <&tog>, <&kp>;
+            label = "mo_or_press_key";
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;
@@ -79,7 +79,7 @@
   &kp Q        &kp W        &kp E         &kp R          &kp T                                    &kp Y  &kp U         &kp I         &kp O        &kp P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                                    &kp H  &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
   &kp Z        &kp X        &kp C         &kp V          &kp B                                    &kp N  &kp M         &kp COMMA     &kp DOT      &kp SQT
-                                          &kp BACKSPACE  &mo 2  &togkp 1 SPACE    &togkp 5 ENTER  &mo 3  &kp TAB
+                                          &kp BACKSPACE  &mo 2  &mogkp 1 SPACE    &mogkp 5 ENTER  &mo 3  &kp TAB
             >;
 
             display-name = "Base";
