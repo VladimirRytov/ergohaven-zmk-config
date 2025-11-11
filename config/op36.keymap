@@ -79,7 +79,7 @@
   &kp Q        &kp W        &kp E         &kp R          &kp T                                    &kp Y  &kp U         &kp I         &kp O        &kp P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                                    &kp H  &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
   &kp Z        &kp X        &kp C         &kp V          &kp B                                    &kp N  &kp M         &kp COMMA     &kp DOT      &kp SQT
-                                          &kp BACKSPACE  &mo 2  &mogkp 1 SPACE    &mogkp 5 ENTER  &mo 3  &kp TAB
+                                          &kp BACKSPACE  &mo 2  &mogkp 1 SPACE    &mogkp 6 ENTER  &mo 3  &kp TAB
             >;
 
             display-name = "Base";
@@ -128,21 +128,21 @@
             display-name = "Adjust";
         };
 
-        mouse {
-            bindings = <
-  &trans  &trans     &trans    &trans     &trans                        &trans  &trans          &mmv MOVE_UP    &trans           &trans
-  &mo 7   &mkp RCLK  &mkp MB3  &mkp LCLK  &mo 6                         &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-  &trans  &trans     &trans    &mkp MB4   &mkp MB5                      &trans  &trans          &trans          &trans           &trans
-                               &trans     &trans    &tog 5    &mkp MB1  &trans  &mkp MB2
-            >;
-        };
-
         slow_mouse {
             bindings = <
   &trans  &trans     &trans    &trans     &trans                        &trans  &trans             &mmv MOVE_Y(-600)  &trans            &trans
-  &trans  &mkp RCLK  &mkp MB3  &mkp LCLK  &trans                        &trans  &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &trans
+  &mo 7   &mkp RCLK  &mkp MB3  &mkp LCLK  &mo 6                         &trans  &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &trans
   &trans  &trans     &trans    &mkp MB4   &mkp MB5                      &trans  &trans             &trans             &trans            &trans
                                &trans     &trans    &trans    &mkp MB1  &trans  &mkp MB2
+            >;
+        };
+
+        mouse {
+            bindings = <
+  &trans  &trans     &trans    &trans     &trans                        &trans  &trans          &mmv MOVE_UP    &trans           &trans
+  &none   &mkp RCLK  &mkp MB3  &mkp LCLK  &none                         &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+  &trans  &trans     &trans    &mkp MB4   &mkp MB5                      &trans  &trans          &trans          &trans           &trans
+                               &trans     &trans    &tog 6    &mkp MB1  &trans  &mkp MB2
             >;
         };
 
