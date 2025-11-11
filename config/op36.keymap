@@ -66,10 +66,20 @@
   &kp Q        &kp W        &kp E         &kp R          &kp T                          &kp Y  &kp U         &kp I         &kp O        &kp P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                          &kp H  &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
   &kp Z        &kp X        &kp C         &kp V          &kp B                          &kp N  &kp M         &kp COMMA     &kp DOT      &kp SQT
-                                          &kp BACKSPACE  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp TAB
+                                          &kp BACKSPACE  &mo 2  &kp SPACE    &kp ENTER  &mo 3  &kp TAB
             >;
 
             display-name = "Base";
+        };
+
+        base_no_holds {
+            display-name = "Base";
+            bindings = <
+  &kp Q  &kp W  &kp E  &kp R          &kp T                          &kp Y  &kp U    &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D  &kp F          &kp G                          &kp H  &kp J    &kp K      &kp L    &kp SEMI
+  &kp Z  &kp X  &kp C  &kp V          &kp B                          &kp N  &kp M    &kp COMMA  &kp DOT  &kp SQT
+                       &kp BACKSPACE  &mo 2  &kp SPACE    &kp ENTER  &mo 3  &kp TAB
+            >;
         };
 
         nav {
@@ -77,7 +87,7 @@
   &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                        &kp N6           &kp N7           &kp N8           &kp N9        &kp N0
   &hml LGUI ESC  &kp LALT  &kp LSHFT  &kp LCTRL  &kp ENTER                     &kp PRINTSCREEN  &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
   &none          &kp HOME  &kp INS    &kp END    &kp DELETE                    &kp CAPS         &none            &kp PG_DN        &kp PG_UP     &none
-                                      &trans     &trans      &trans    &trans  &mo 3            &trans
+                                      &trans     &trans      &trans    &trans  &mo 4            &trans
             >;
 
             display-name = "Navigation";
@@ -88,7 +98,7 @@
   &none           &kp LT          &kp EQUAL         &kp GT           &kp GRAVE                    &kp CARET  &kp LBKT         &kp UNDER        &kp RBKT        &none
   &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT  &hmr RCTRL LBRC  &hmr RSHFT SEMI  &hmr LALT RBRC  &hmr RGUI EXCL
   &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &none                        &none      &kp PIPE         &kp TILDE        &kp AMPS        &kp DLLR
-                                                    &trans           &mo 3      &tog 4    &trans  &trans     &trans
+                                                    &trans           &mo 4      &tog 5    &trans  &trans     &trans
             >;
 
             display-name = "Symbols";
@@ -108,9 +118,9 @@
         mouse {
             bindings = <
   &trans  &trans     &trans    &trans     &trans                        &trans  &trans          &mmv MOVE_UP    &trans           &trans
-  &mo 6   &mkp RCLK  &mkp MB3  &mkp LCLK  &mo 5                         &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+  &mo 7   &mkp RCLK  &mkp MB3  &mkp LCLK  &mo 6                         &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
   &trans  &trans     &trans    &mkp MB4   &mkp MB5                      &trans  &trans          &trans          &trans           &trans
-                               &trans     &trans    &tog 4    &mkp MB1  &trans  &mkp MB2
+                               &trans     &trans    &tog 5    &mkp MB1  &trans  &mkp MB2
             >;
         };
 
