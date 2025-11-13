@@ -1,9 +1,9 @@
 #include "keys_ru.h"
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 800  // default: 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25    // default: 10
+#define SLOW_MOUSE_L 6
 #define MOUSE_L 5
-#define FAST_MOUSE_L 6
 
 #include <behaviors.dtsi>
 #include <input/processors.dtsi>
@@ -20,8 +20,8 @@
 
 &mmv_input_listener {
     set_mouse_fast {
-        layers = <FAST_MOUSE_L>;
-        input-processors = <&zip_xy_scaler 2 1>;
+        layers = <SLOW_MOUSE_L>;
+        input-processors = <&zip_xy_scaler 2 5>;
     };
 };
 
@@ -138,7 +138,7 @@
             display-name = "Adjust";
         };
 
-        slow_mouse {
+        mouse {
             bindings = <
   &trans  &trans     &trans    &trans     &trans                        &trans  &trans          &mmv MOVE_UP    &trans           &trans
   &mo 7   &mkp RCLK  &mkp MB3  &mkp LCLK  &mo 6                         &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
@@ -147,7 +147,7 @@
             >;
         };
 
-        mouse {
+        slow_mouse {
             bindings = <
   &trans  &trans     &trans    &trans     &trans                        &trans  &trans          &mmv MOVE_UP    &trans           &trans
   &none   &mkp RCLK  &mkp MB3  &mkp LCLK  &none                         &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
