@@ -148,10 +148,19 @@
 
         mouse {
             bindings = <
-  &none  &none      &none     &none      &none                     &none     &none           &mmv MOVE_UP    &none            &tog_on 4
-  &mo 6  &mkp RCLK  &mkp MB3  &mkp LCLK  &none                     &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_RIGHT
+  &none  &none      &none     &none      &none                     &none     &none           &mmv MOVE_UP    &none            &tog_on 5
+  &mo 7  &mkp RCLK  &mkp MB3  &mkp LCLK  &none                     &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_RIGHT
   &none  &none      &none     &mkp MB4   &mkp MB5                  &mkp MB1  &mkp MCLK       &mkp MB2        &none            &none
-                              &none      &none     &mo 5    &mo 5  &none     &tog 4
+                              &none      &none     &mo 6    &mo 6  &none     &none
+            >;
+        };
+
+        hold_mouse {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+                          &trans  &trans  &trans    &trans  &trans  &tog 5
             >;
         };
 
