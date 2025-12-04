@@ -97,6 +97,12 @@
             bindings = <&kp RBKT>;
             key-positions = <7 8>;
         };
+
+        perma_mouse {
+            bindings = <&to 4>;
+            key-positions = <30 35>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -104,10 +110,10 @@
 
         base {
             bindings = <
-  &kp Q        &kp W        &kp E         &kp R          &kp T                          &kp Y  &kp U          &kp I         &kp O        &kp P
-  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                          &kp H  &hmr RCTRL J   &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
-  &kp Z        &kp X        &kp C         &kp V          &kp B                          &kp N  &kp M          &kp COMMA     &kp DOT      &kp SQT
-                                          &kp BACKSPACE  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &tog_kp 4 TAB
+  &kp Q        &kp W        &kp E         &kp R          &kp T                          &kp Y  &kp U         &kp I         &kp O        &kp P
+  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                          &kp H  &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
+  &kp Z        &kp X        &kp C         &kp V          &kp B                          &kp N  &kp M         &kp COMMA     &kp DOT      &kp SQT
+                                          &kp BACKSPACE  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &mokp 4 TAB
             >;
 
             display-name = "Base";
@@ -148,19 +154,10 @@
 
         mouse {
             bindings = <
-  &none  &none      &none     &none      &none                     &none     &none           &mmv MOVE_UP    &none            &tog_on 5
-  &mo 7  &mkp RCLK  &mkp MB3  &mkp LCLK  &none                     &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_RIGHT
-  &none  &none      &none     &mkp MB4   &mkp MB5                  &mkp MB1  &mkp MCLK       &mkp MB2        &none            &none
-                              &none      &none     &mo 6    &mo 6  &none     &tog 4
-            >;
-        };
-
-        hold_mouse {
-            bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans  &tog 5
+  &none  &none      &none     &none      &none                        &none      &none           &mmv MOVE_UP    &none            &mo 5
+  &mo 6  &mkp RCLK  &mkp MB3  &mkp LCLK  &none                        &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_RIGHT
+  &none  &none      &none     &mkp MB4   &mkp MB5                     &mkp MCLK  &mkp MCLK       &tog 4          &none            &none
+                              &none      &none     &mo 5    &mkp MB1  &mo 6      &mkp MB2
             >;
         };
 
