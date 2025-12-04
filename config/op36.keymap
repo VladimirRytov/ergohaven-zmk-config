@@ -98,10 +98,10 @@
             key-positions = <7 8>;
         };
 
-        perma_mouse {
+        combo_perma_mouse {
             bindings = <&tog 4>;
             key-positions = <30 35>;
-            layers = <0>;
+            layers = <0 4>;
         };
     };
 
