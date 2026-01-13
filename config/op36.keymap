@@ -169,8 +169,8 @@
         slow_mouse {
             bindings = <
   &trans  &trans     &trans    &trans     &trans                       &trans  &trans    &trans  &trans  &trans
-  &none   &mkp RCLK  &mkp MB3  &mkp LCLK  &none                        &trans  &trans    &trans  &trans  &trans
-  &trans  &trans     &trans    &mkp MB4   &mkp MB5                     &trans  &trans    &trans  &trans  &trans
+  &trans  &mkp RCLK  &mkp MB3  &mkp LCLK  &none                        &trans  &trans    &trans  &trans  &trans
+  &trans  &trans     &none     &mkp MB4   &mkp MB5                     &trans  &trans    &trans  &trans  &trans
                                &trans     &trans    &none    &mkp MB1  &trans  &mkp MB2
             >;
         };
